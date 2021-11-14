@@ -20,9 +20,9 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - opentelemetry-exporter-otlp-proto-grpc ==1.7.1
     - python >=3.6
-    # - opentelemetry-exporter-otlp-proto-http ==1.7.1
+    - opentelemetry-exporter-otlp-proto-grpc ==1.7.1
+    - opentelemetry-exporter-otlp-proto-http ==1.7.1
 
 test:
   imports:
