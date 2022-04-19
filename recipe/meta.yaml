@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-otlp" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry-exporter-otlp-{{ version }}.tar.gz
-  sha256: d02bf62bf8af78986e1bf3db88c64e60bbcb2050e38b0803d935096c95cb765c
+  sha256: 1775c9f444f1115ba538e0b084d796c09fb9987db08d5903f119c9db23c23117
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - opentelemetry-exporter-otlp-proto-grpc ==1.10.0
-    - opentelemetry-exporter-otlp-proto-http ==1.10.0
+    - opentelemetry-exporter-otlp-proto-grpc ==1.11.0
+    - opentelemetry-exporter-otlp-proto-http ==1.11.0
 
 test:
   imports:
