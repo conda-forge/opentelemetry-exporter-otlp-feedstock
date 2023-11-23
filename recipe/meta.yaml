@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-exporter-otlp" %}
-{% set version = "1.18.0" %}
+{% set version = "1.19.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,22 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_exporter_otlp-{{ version }}.tar.gz
-  sha256: cafcf7f28debbcc22e06d52cdc4f65a118f17b730dabe8f9d4b87587e95b1481
+  sha256: 2d4b066180452b8e74a0a598d98901769148a0fe17900c70aca37d3c7c4e8aaa
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
     - python >=3.7
-    - pip
     - hatchling
+    - pip
   run:
     - python >=3.7
-    - opentelemetry-exporter-otlp-proto-grpc ==1.18.0
-    - opentelemetry-exporter-otlp-proto-http ==1.18.0
+    - opentelemetry-exporter-otlp-proto-grpc =={{ version }}
+    - opentelemetry-exporter-otlp-proto-http =={{ version }}
 
 test:
   imports:
@@ -42,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - mariusvniekerk
+    - rxm7706
