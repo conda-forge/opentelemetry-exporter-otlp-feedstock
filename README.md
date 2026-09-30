@@ -198,6 +198,3 @@ Feedstock Maintainers
 * [@pb01ka](https://github.com/pb01ka/)
 * [@rxm7706](https://github.com/rxm7706/)
 
-
-<!-- dummy commit to enable rerendering -->
-
