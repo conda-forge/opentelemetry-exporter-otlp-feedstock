@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-exporter-otlp
-  version: "1.45.0"
+  version: "1.45.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_exporter_otlp-${{ version }}.tar.gz
-  sha256: 16a96045d6f5ec4ad8a3314e422887df654ab5bc8c194b631134477cc657fde1
+  sha256: d0ac35592e77663a9fabf2740b4818c57196b1b764e0c8449d0d7bb2c7b2bc67
 
 build:
   number: 0
